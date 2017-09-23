@@ -6,4 +6,4 @@
 
 3. Run listener: python3 testconversation_bot.py
 
-4. You can check real example via [a link](https://t.me/testconversation_bot)
+4. You can check real example via [@testconversation_bot](https://t.me/testconversation_bot)
