@@ -7,3 +7,7 @@
 3. Run listener: `python3 testconversation_bot.py`
 
 4. You can check real example via [@testconversation_bot](https://t.me/testconversation_bot)
+
+Helpful information for development:
+[@https://python-telegram-bot.readthedocs.io/en/stable/](Officilal python library for Telegram API)
+[@https://github.com/python-telegram-bot/python-telegram-bot/tree/master/examples](Other examples of using library from link above)
