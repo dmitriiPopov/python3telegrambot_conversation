@@ -1,4 +1,5 @@
-* README for python 3 *
+# README for python 3
+
 
 1. Install `https://github.com/python-telegram-bot/python-telegram-bot` via `pip3`
 
