@@ -1,0 +1,6 @@
+
+# @testconversation_bot
+
+class Config:
+    # defined constant for token (OPENED INFORMATION FOR EXAMPLE)
+    BOT_TOKEN = '<BOT-TOKEN-STRING>'
