@@ -1,5 +1,6 @@
-
 # @testconversation_bot
+
+import os
 
 class Config:
     # defined constant for token (OPENED INFORMATION FOR EXAMPLE)
