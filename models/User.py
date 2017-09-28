@@ -1,5 +1,6 @@
 
 from collections import OrderedDict
+from config.config import Config
 
 # Class for User entity
 class User:
@@ -79,9 +80,9 @@ class User:
 
     # get filename for text information
     def getUserTextfile(self):
-        return 'uploads/' + self.username + '_text.txt'
+        return Config.APP_DIR + '/uploads/' + self.username + '_text.txt'
 
     # get filename for image
     def getUserImagefile(self):
-        return 'uploads/' + self.username + '_photo.jpg'
+        return Config.APP_DIR + '/uploads/' + self.username + '_photo.jpg'
 
