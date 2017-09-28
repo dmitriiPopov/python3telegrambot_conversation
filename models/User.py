@@ -80,9 +80,9 @@ class User:
 
     # get filename for text information
     def getUserTextfile(self):
-        return Config.APP_DIR + '/uploads/' + self.username + '_text.txt'
+        return Config.APP_WEB_UPLOADS_DIR + '/' + self.username + '_text.txt'
 
     # get filename for image
     def getUserImagefile(self):
-        return Config.APP_DIR + '/uploads/' + self.username + '_photo.jpg'
+        return Config.APP_WEB_UPLOADS_DIR + '/' + self.username + '_photo.jpg'
 

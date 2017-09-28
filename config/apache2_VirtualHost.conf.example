@@ -1,0 +1,20 @@
+<VirtualHost 127.0.0.1:80>
+	ServerAdmin admin@example.com
+	ServerName testconversation_bot
+	ServerAlias testconversation_bot
+	DocumentRoot "/var/www/example.com/web"
+	ErrorLog /var/www/apache2log/apache-testconversation_bot-error.log
+	CustomLog /var/www/apache2log/apache-testconversation_bot-access.log combined
+	<Directory /var/www/example.com/web>
+        Order Deny,allow
+        Deny from all
+	</Directory>
+	<Directory /var/www/example.com/web/uploads>
+	    Order Deny,allow
+	    Deny from all
+		<FilesMatch "\.(gif|jpe?g|jpg|png|txt)$">
+		  Order deny,allow
+		  Allow from all
+		</FilesMatch>
+	</Directory>
+</VirtualHost>

@@ -1,0 +1,14 @@
+server{
+    listen 127.0.0.1;
+    server_name .example.com www.example.com;
+    root /var/www/example.com/web;
+
+	location /var/www/example.com/web {
+	  deny all;
+	}
+
+	location ~ \.(gif|jpe?g|jpg|png|txt)$ {
+	  allow all;
+	}
+
+}
