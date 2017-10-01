@@ -86,3 +86,10 @@ class User:
     def getUserImagefile(self):
         return Config.APP_WEB_UPLOADS_DIR + '/' + self.username + '_photo.jpg'
 
+    def clearAttributes(self):
+        self.username        = None
+        self.gender          = None
+        self.photoFileObject = None
+        self.photoCaption    = None
+        self.description     = None
+

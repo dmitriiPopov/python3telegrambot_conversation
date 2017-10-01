@@ -125,6 +125,8 @@ def handleDescriptionAction(bot, update):
 
     #last message for user
     update.message.reply_text(Message.getEndMessage(userModel))
+    # clear attributes
+    userModel.clearAttributes()
     # signal that should end conversation
     return ConversationHandler.END
 
@@ -141,6 +143,8 @@ def handleCancelAction(bot, update):
         'Goodbye, ' + user.first_name + ' ' + user.last_name,
         reply_markup=ReplyKeyboardRemove()
     )
+    # clear attributes
+    userModel.clearAttributes()
     # sygnal that should end conversation
     return ConversationHandler.END
 
